@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="fr" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ملفي الشخصي</title>
+    <title>Mon Profil</title>
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,24 +21,36 @@
     <nav class="navbar navbar-expand-lg py-2 fixed-top">
         <div class="container">
             <!-- logo -->
-            <a class="navbar-brand fs-4 fw-bold text-light"> منى الأطرش </a>
+            <a class="navbar-brand fs-4 fw-bold text-light">Mohamed Zito</a>
             <!-- toggle btn -->
-            <button class="navbar-toggler border-1 border-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+            <button class="navbar-toggler border-1 border-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <!-- sidebar -->
-            <div class="sidebar offcanvas offcanvas-end" id="offcanvasNavbar">
-                <div class="offcanvas-header text-dark border-bottom">
-                    <h5 class="offcanvas-title fw-bold text-primary"> منى الأطرش </h5>
-                    <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas"></button>
+            <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <!-- sidebar header -->
+                <div class="offcanvas-header text-dark borde-bottom">
+                    <h5 class="offcanvas-title fw-bold" id="offcanvasNavbarLabel">Mohamed Zito</h5>
+                    <button type="button" class="btn-close btn-close-dark shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
-                        <li class="nav-item mx-2"><a class="nav-link" href="index.html">الرئيسية</a></li>
-                        <li class="nav-item mx-2"><a class="nav-link" href="about.html">من أنا</a></li>
-                        <li class="nav-item mx-2"><a class="nav-link" href="services.html">خدماتي</a></li>
-                        <li class="nav-item mx-2"><a class="nav-link" href="skills.html">مهاراتي</a></li>
-                        <li class="nav-item mx-2"><a class="nav-link" href="contact.html">اتصل بي</a></li>
+                <!-- sidebar body -->
+                <div class="offcanvas-body d-flex flex-column flex-lg-row p-2 p-lg-0">
+                    <ul class="navbar-nav justify-content-center justify-content-sm-center justify-content-md-center align-items-center flex-grow-1 pe-3">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link fw-bold" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="skills.html">Skills</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="contact.html">Contact Me</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -47,64 +59,66 @@
     <!-- End navbar -->
 
     <!-- start skills -->
-    <div class="skills py-5 mt-5" id="skills">
+    <div class="skills py-5" id="skills">
         <div class="container">
-            <div class="skills-head mt-5">
-                <h1 class="text-center">مهاراتي</h1>
-                <p class="text-center">إدارة الحسابات، التحليل المالي، إعداد التقارير، والتخطيط المالي، وأكثر.</p>
-            </div>
+            <h1 class="text-center">Mes Compétences</h1>
+            <p class="text-center">Gestion comptable, analyse financière, rapports financiers et plus encore.</p>
+
             <div class="row mt-5">
-                <!-- Skill 1: Accounting Management -->
+                <!-- Compétence 1 : Gestion Comptable -->
                 <div class="col-sm-12 col-md-4">
                     <div class="skill p-3 text-center shadow">
                         <i class="fas fa-briefcase fa-3x mb-3 text-center"></i>
                         <br>
-                        <strong>إدارة الحسابات</strong>
+                        <strong>Gestion Comptable</strong>
                     </div>
                 </div>
-                <!-- Skill 2: Financial Analysis -->
+                <!-- Compétence 2 : Analyse Financière -->
                 <div class="col-sm-12 col-md-4">
                     <div class="skill p-3 text-center shadow">
                         <i class="fas fa-chart-line fa-3x mb-3 text-center"></i>
                         <br>
-                        <strong>التحليل المالي</strong>
+                        <strong>Analyse Financière</strong>
                     </div>
                 </div>
-                <!-- Skill 3: Report Preparation -->
+                <!-- Compétence 3 : Préparation des Rapports -->
                 <div class="col-sm-12 col-md-4">
                     <div class="skill p-3 text-center shadow">
                         <i class="fas fa-file-invoice fa-3x mb-3 text-center"></i>
                         <br>
-                        <strong>إعداد التقارير المالية</strong>
+                        <strong>Préparation des Rapports Financiers</strong>
                     </div>
                 </div>
-                <!-- Skill 4: Tax Planning -->
+                <!-- Compétence 4 : Planification Fiscale -->
                 <div class="col-sm-12 col-md-4">
                     <div class="skill p-3 text-center shadow">
                         <i class="fas fa-calculator fa-3x mb-3 text-center"></i>
                         <br>
-                        <strong>التخطيط الضريبي</strong>
+                        <strong>Planification Fiscale</strong>
                     </div>
                 </div>
-                <!-- Skill 5: Budget Management -->
+                <!-- Compétence 5 : Gestion du Budget -->
                 <div class="col-sm-12 col-md-4">
                     <div class="skill p-3 text-center shadow">
                         <i class="fas fa-wallet fa-3x mb-3 text-center"></i>
                         <br>
-                        <strong>إدارة الميزانية</strong>
+                        <strong>Gestion du Budget</strong>
                     </div>
                 </div>
-                <!-- Skill 6: Auditing -->
+                <!-- Compétence 6 : Audit Financier -->
                 <div class="col-sm-12 col-md-4">
                     <div class="skill p-3 text-center shadow">
                         <i class="fas fa-search-dollar fa-3x mb-3 text-center"></i>
                         <br>
-                        <strong>التدقيق المالي</strong>
+                        <strong>Audit Financier</strong>
                     </div>
                 </div>
-            </div>
+            </div>            
         </div>
-    </div>    
+    </div>
     <!-- end skills -->
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

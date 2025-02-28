@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="fr" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ملفي الشخصي</title>
+    <title>Mon Profil</title>
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,24 +21,36 @@
     <nav class="navbar navbar-expand-lg py-2 fixed-top">
         <div class="container">
             <!-- logo -->
-            <a class="navbar-brand fs-4 fw-bold text-light"> منى الأطرش </a>
+            <a class="navbar-brand fs-4 fw-bold text-light">Mohamed Zito</a>
             <!-- toggle btn -->
-            <button class="navbar-toggler border-1 border-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+            <button class="navbar-toggler border-1 border-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <!-- sidebar -->
-            <div class="sidebar offcanvas offcanvas-end" id="offcanvasNavbar">
-                <div class="offcanvas-header text-dark border-bottom">
-                    <h5 class="offcanvas-title fw-bold text-primary"> منى الأطرش </h5>
-                    <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas"></button>
+            <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <!-- sidebar header -->
+                <div class="offcanvas-header text-dark borde-bottom">
+                    <h5 class="offcanvas-title fw-bold" id="offcanvasNavbarLabel">Mohamed Zito</h5>
+                    <button type="button" class="btn-close btn-close-dark shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
-                        <li class="nav-item mx-2"><a class="nav-link" href="index.html">الرئيسية</a></li>
-                        <li class="nav-item mx-2"><a class="nav-link" href="about.html">من أنا</a></li>
-                        <li class="nav-item mx-2"><a class="nav-link" href="services.html">خدماتي</a></li>
-                        <li class="nav-item mx-2"><a class="nav-link" href="skills.html">مهاراتي</a></li>
-                        <li class="nav-item mx-2"><a class="nav-link" href="contact.html">اتصل بي</a></li>
+                <!-- sidebar body -->
+                <div class="offcanvas-body d-flex flex-column flex-lg-row p-2 p-lg-0">
+                    <ul class="navbar-nav justify-content-center justify-content-sm-center justify-content-md-center align-items-center flex-grow-1 pe-3">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link fw-bold" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="skills.html">Skills</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="contact.html">Contact Me</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -47,31 +59,35 @@
     <!-- End navbar -->
 
     <!-- start about -->
-    <div class="about mt-5 py-5" id="about">
+    <div class="about" id="about">
         <div class="container">
             <div class="row py-5 justify-content-center">
                 <div class="about-image col-lg-6 col-md-4 col-sm-12 text-center">
-                    <img src="media/accountable-woman.jpg" alt="صورة عني" class="img-fluid rounded">
+                    <img src="media/accountable-man.jpg" alt="Image de moi" class="img-fluid rounded mt-5">
                 </div>
                 <div class="about-text col-lg-6 col-md-6 col-sm-12 align-items-center">
-                    <h1 class="fw-bold"> من أنا  </h1>
+                    <h1 class="fw-bold">À propos de moi</h1>
                     <p class="mt-4">
-                        أنا <span class="fw-bold"> منى الأطرش </span> محاسبة محترفة من المغرب أولاد تايمة, . 
-                        أتمتع بخبرة واسعة في مجال المحاسبة المالية وإعداد التقارير المالية وتحليل البيانات. 
-                        أعمل بجد لضمان تقديم خدمات محاسبية دقيقة وفعالة لجميع عملائي.
+                        Je suis <span class="fw-bold">Mohamed Zito</span>, Je m'appelle Mohamed Zitou, diplômé de [Institut
+                        Spécialisé de Technologie Appliquée_Agadir].
+                        Passionné par l'apprentissage et le développement
                     </p>
                     <p class="mt-4">
-                        بالإضافة إلى المحاسبة، أتمتع بمهارات متقدمة في استخدام برامج المحاسبة مثل QuickBooks وExcel،
-                        ولدي قدرة عالية في إدارة الحسابات والتخطيط المالي للأعمال.
+                        je possède de fortes capacités d'analyse et une
+                        capacité à travailler en équipe. 
                     </p>
                     <p class="mt-4">
-                        أنا شغوفة بتطوير مهاراتي في مجال المحاسبة وأبقى دائمًا على اطلاع بأحدث المعايير واللوائح المالية. 
-                        أسعى دائمًا لتحقيق التميز في عملي وضمان تحقيق أفضل النتائج المالية للعملاء.
+                        Je suis passionnée par le développement de mes compétences et je reste toujours à jour avec les dernières normes et réglementations financières.
+                        Mon objectif est d'atteindre l'excellence et de garantir les meilleurs résultats pour mes clients.
                     </p>                    
+                    <a href="about.html" class="btn btn-outline">En savoir plus</a>
                 </div>
             </div>
         </div>
     </div>
     <!-- end about -->
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
