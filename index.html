@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Profil</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Jost:ital,wght@0,100..900;1,100..900&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- style link -->
+    <link rel="stylesheet" href="style/main.css">
+</head>
+
+<body>
+    <!-- Start navbar -->
+    <nav class="navbar navbar-expand-lg py-2 fixed-top">
+        <div class="container">
+            <!-- logo -->
+            <a class="navbar-brand fs-4 fw-bold text-light">Mohamed Zito</a>
+            <!-- toggle btn -->
+            <button class="navbar-toggler border-1 border-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- sidebar -->
+            <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <!-- sidebar header -->
+                <div class="offcanvas-header text-dark borde-bottom">
+                    <h5 class="offcanvas-title fw-bold" id="offcanvasNavbarLabel">Mohamed Zito</h5>
+                    <button type="button" class="btn-close btn-close-dark shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <!-- sidebar body -->
+                <div class="offcanvas-body d-flex flex-column flex-lg-row p-2 p-lg-0">
+                    <ul class="navbar-nav justify-content-center justify-content-sm-center justify-content-md-center align-items-center flex-grow-1 pe-3">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link fw-bold" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#contact">Contact Me</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- End navbar -->
+
+    <!-- start landing -->
+    <div class="landing vh-100 d-flex justify-content-center align-items-center mt-5">
+        <div class="container d-flex justify-content-center align-items-center">
+            <div class="landing-text d-flex flex-column align-items-center text-center py-3 rounded">
+                <h1>Bienvenue, je suis <span class="p-2">Mohamed Zito</span></h1>
+                <br>
+                <p>Étudiante en faculté d'économie</p>
+                <p>Experte en commerce électronique</p>
+                <a href="#contact" class="btn">Contactez-moi</a>
+            </div>
+        </div>
+    </div>    
+    <!-- end landing -->
+
+    <!-- start about -->
+    <div class="about" id="about">
+        <div class="container">
+            <div class="row py-5 justify-content-center">
+                <div class="about-image col-lg-6 col-md-4 col-sm-12 text-center">
+                    <img src="media/accountable-man.jpg" alt="Image de moi" class="img-fluid rounded mt-5">
+                </div>
+                <div class="about-text col-lg-6 col-md-6 col-sm-12 align-items-center">
+                    <h1 class="fw-bold">À propos de moi</h1>
+                    <p class="mt-4">
+                        Je suis <span class="fw-bold">Mohamed Zito</span>, Je m'appelle Mohamed Zitou, diplômé de [Institut
+                        Spécialisé de Technologie Appliquée_Agadir].
+                        Passionné par l'apprentissage et le développement
+                    </p>
+                    <p class="mt-4">
+                        je possède de fortes capacités d'analyse et une
+                        capacité à travailler en équipe. 
+                    </p>
+                    <p class="mt-4">
+                        Je suis passionnée par le développement de mes compétences et je reste toujours à jour avec les dernières normes et réglementations financières.
+                        Mon objectif est d'atteindre l'excellence et de garantir les meilleurs résultats pour mes clients.
+                    </p>                    
+                    <a href="about.html" class="btn btn-outline">En savoir plus</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end about -->
+
+    <!-- start services -->
+    <div class="services py-5" id="services">
+        <div class="container">
+            <div class="services-head">
+                <h1 class="text-center">Mes Services</h1>
+                <p class="text-center">Découvrez mes services et n'hésitez pas à me contacter pour collaborer !</p>
+            </div>
+            <div class="row g-3 mt-5">
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="service p-2 shadow rounded">
+                        <i class="fas fa-calculator fa-2x mb-3"></i>
+                        <h3 class="mt-3">Préparation de rapports financiers</h3>
+                        <p>Des rapports financiers précis pour des décisions stratégiques.</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="service p-3 shadow rounded">
+                        <i class="fas fa-piggy-bank fa-2x mb-3"></i>
+                        <h3 class="mt-3">Planification financière</h3>
+                        <p>Des stratégies financières pour améliorer la trésorerie et atteindre vos objectifs.</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="service p-3 shadow rounded">
+                        <i class="fas fa-file-invoice-dollar fa-2x mb-3"></i>
+                        <h3 class="mt-3">Émission de factures</h3>
+                        <p>Des factures claires et professionnelles pour vos transactions.</p>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </div>
+    <!-- end services -->
+
+    <!-- start skills -->
+    <div class="skills py-5" id="skills">
+        <div class="container">
+            <h1 class="text-center">Mes Compétences</h1>
+            <p class="text-center">Gestion comptable, analyse financière, rapports financiers et plus encore.</p>
+
+            <div class="row mt-5">
+                <!-- Compétence 1 : Gestion Comptable -->
+                <div class="col-sm-12 col-md-4">
+                    <div class="skill p-3 text-center shadow">
+                        <i class="fas fa-briefcase fa-3x mb-3 text-center"></i>
+                        <br>
+                        <strong>Gestion Comptable</strong>
+                    </div>
+                </div>
+                <!-- Compétence 2 : Analyse Financière -->
+                <div class="col-sm-12 col-md-4">
+                    <div class="skill p-3 text-center shadow">
+                        <i class="fas fa-chart-line fa-3x mb-3 text-center"></i>
+                        <br>
+                        <strong>Analyse Financière</strong>
+                    </div>
+                </div>
+                <!-- Compétence 3 : Préparation des Rapports -->
+                <div class="col-sm-12 col-md-4">
+                    <div class="skill p-3 text-center shadow">
+                        <i class="fas fa-file-invoice fa-3x mb-3 text-center"></i>
+                        <br>
+                        <strong>Préparation des Rapports Financiers</strong>
+                    </div>
+                </div>
+                <!-- Compétence 4 : Planification Fiscale -->
+                <div class="col-sm-12 col-md-4">
+                    <div class="skill p-3 text-center shadow">
+                        <i class="fas fa-calculator fa-3x mb-3 text-center"></i>
+                        <br>
+                        <strong>Planification Fiscale</strong>
+                    </div>
+                </div>
+                <!-- Compétence 5 : Gestion du Budget -->
+                <div class="col-sm-12 col-md-4">
+                    <div class="skill p-3 text-center shadow">
+                        <i class="fas fa-wallet fa-3x mb-3 text-center"></i>
+                        <br>
+                        <strong>Gestion du Budget</strong>
+                    </div>
+                </div>
+                <!-- Compétence 6 : Audit Financier -->
+                <div class="col-sm-12 col-md-4">
+                    <div class="skill p-3 text-center shadow">
+                        <i class="fas fa-search-dollar fa-3x mb-3 text-center"></i>
+                        <br>
+                        <strong>Audit Financier</strong>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </div>
+    <!-- end skills -->
+
+    <!-- start contact -->
+    <div class="contact" id="contact">
+        <div class="container">
+            <div id="ford-motor" class="section-padding">
+                <div class="container">
+                    <div class="row p-5 align-items-center">
+                        <div class="col-md-6">
+                            <h2> Contactez-moi </h2>
+                            <p>
+                                Contactez-moi via les réseaux sociaux ou par e-mail.
+                            </p>
+                            <div class="links">
+                                <a href="https://www.linkedin.com" target="_blank" class="me-3"><i class="fab fa-linkedin fa-2x"></i></a>
+                                <a href="https://www.instagram.com" target="_blank" class="me-3"><i class="fab fa-instagram fa-2x"></i></a>
+                                <a href="mailto:your-email@gmail.com" target="_blank" class="me-3"><i class="fas fa-envelope fa-2x"></i></a>
+                            </div>
+                        </div>                            
+                        <div class="contact-image col-md-6">
+                            <img src="media/contact.png" class="img-fluid rounded" alt="Ford Motor Company">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end contact -->
+
+    <!-- start footer -->   
+    <footer class="footer py-3">
+        <div class="container">
+            <hr class="mb-5 text-dark">
+            <div class="row">
+                <!-- Section À propos -->
+                <div class="col-md-4 mb-4 mt-3">
+                    <h5 class="about-heading fw-bold mb-3 text-dark"> Mohamed Zito </h5>
+                    <p class="text-light">
+                        Je suis <span class="fw-bold"> Mohamed Zito </span>, une comptable professionnelle originaire du Maroc, de la ville d’Oulad Teima.
+                        J’ai une vaste expérience en comptabilité financière, en préparation de rapports financiers et en analyse de données.
+                        Je travaille dur pour garantir des services comptables précis et efficaces à tous mes clients.
+                    </p>
+                </div>
+
+                <!-- Section Contact -->
+                <div class="col-md-4 mt-3">
+                    <h5 class="social-heading fw-bold mb-3 text-dark"> Mes réseaux sociaux </h5>
+                    <div class="social-icons mt-3">
+                        <a href="#" class="me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

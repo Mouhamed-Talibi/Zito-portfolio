@@ -1,0 +1,4 @@
+Colors: 
+    Dark Blue ( #1f4e78 ) – Strong and professional
+    Soft Grey ( #f0f0f0 ) – Clean and simple background
+    Gold/Beige ( #d4af37 ) – Touch of elegance
